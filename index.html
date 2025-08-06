@@ -108,16 +108,83 @@
         "contact-title": "Entre em contato",
         "contact-text": "Envie um email para:"
       }
-      // Adicione mais idiomas aqui se quiser
-    };
-
-    function changeLanguage(lang) {
-      document.querySelectorAll("[data-i18n]").forEach(el => {
-        const key = el.getAttribute("data-i18n");
-        el.textContent = translations[lang][key] || key;
-      });
+      <!-- Script de idiomas -->
+<script>
+  const translations = {
+    pt: {
+      "hero-title": "Alavanque a sua presença digital com a VALTRIX",
+      "hero-subtitle": "Agência especializada em marketing digital, tráfego pago e redes sociais.",
+      "contact-button": "Fale Conosco",
+      "about-title": "Sobre a VALTRIX",
+      "about-text": "A VALTRIX é uma agência moderna focada em gerar resultados reais para empresas através de estratégias eficazes de marketing digital e branding.",
+      "services-title": "Nossos Serviços",
+      "service-1-title": "Gestão de Redes Sociais",
+      "service-1-text": "Conteúdo, estratégia e engajamento para Instagram, Facebook, TikTok e mais.",
+      "service-2-title": "Tráfego Pago",
+      "service-2-text": "Campanhas otimizadas no Facebook Ads e Instagram para conversão.",
+      "service-3-title": "Design & Branding",
+      "service-3-text": "Criação de identidade visual e posicionamento de marca profissional.",
+      "contact-title": "Entre em contato",
+      "contact-text": "Envie um email para:"
+    },
+    en: {
+      "hero-title": "Boost your digital presence with VALTRIX",
+      "hero-subtitle": "Agency specialized in digital marketing, paid traffic and social media.",
+      "contact-button": "Contact Us",
+      "about-title": "About VALTRIX",
+      "about-text": "VALTRIX is a modern agency focused on delivering real results through effective marketing and branding strategies.",
+      "services-title": "Our Services",
+      "service-1-title": "Social Media Management",
+      "service-1-text": "Content, strategy and engagement for Instagram, Facebook, TikTok and more.",
+      "service-2-title": "Paid Traffic",
+      "service-2-text": "Optimized Facebook & Instagram Ads campaigns for conversion.",
+      "service-3-title": "Design & Branding",
+      "service-3-text": "Visual identity creation and professional brand positioning.",
+      "contact-title": "Get in Touch",
+      "contact-text": "Send an email to:"
+    },
+    es: {
+      "hero-title": "Impulsa tu presencia digital con VALTRIX",
+      "hero-subtitle": "Agencia especializada en marketing digital, tráfico pago y redes sociales.",
+      "contact-button": "Contáctanos",
+      "about-title": "Sobre VALTRIX",
+      "about-text": "VALTRIX es una agencia moderna enfocada en obtener resultados reales mediante estrategias efectivas de marketing y branding.",
+      "services-title": "Nuestros Servicios",
+      "service-1-title": "Gestión de Redes Sociales",
+      "service-1-text": "Contenido, estrategia y engagement para Instagram, Facebook, TikTok y más.",
+      "service-2-title": "Tráfico Pago",
+      "service-2-text": "Campañas optimizadas en Facebook e Instagram para conversión.",
+      "service-3-title": "Diseño y Branding",
+      "service-3-text": "Creación de identidad visual y posicionamiento de marca profesional.",
+      "contact-title": "Contáctanos",
+      "contact-text": "Envía un correo a:"
+    },
+    de: {
+      "hero-title": "Steigern Sie Ihre digitale Präsenz mit VALTRIX",
+      "hero-subtitle": "Agentur spezialisiert auf digitales Marketing, bezahlte Werbung und soziale Medien.",
+      "contact-button": "Kontaktieren Sie uns",
+      "about-title": "Über VALTRIX",
+      "about-text": "VALTRIX ist eine moderne Agentur, die sich auf echte Ergebnisse durch effektive Marketing- und Branding-Strategien konzentriert.",
+      "services-title": "Unsere Dienstleistungen",
+      "service-1-title": "Social Media Management",
+      "service-1-text": "Inhalte, Strategie und Engagement für Instagram, Facebook, TikTok und mehr.",
+      "service-2-title": "Bezahlte Werbung",
+      "service-2-text": "Optimierte Kampagnen auf Facebook und Instagram zur Konvertierung.",
+      "service-3-title": "Design & Branding",
+      "service-3-text": "Erstellung von visueller Identität und professionellem Markenauftritt.",
+      "contact-title": "Kontakt",
+      "contact-text": "Schicken Sie eine E-Mail an:"
     }
-  </script>
+  };
+
+  function changeLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      el.textContent = translations[lang]?.[key] || translations.pt[key] || key;
+    });
+  }
+</script>
 
 </body>
 </html>
+
