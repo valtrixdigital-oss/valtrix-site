@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VALTRIX - Agência SMMA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <header class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">VALTRIX</h1>
+      <select class="bg-gray-800 px-2 py-1 rounded text-white" onchange="changeLanguage(this.value)">
+        <option value="pt">🇵🇹 PT</option>
+        <option value="en">🇬🇧 EN</option>
+        <option value="es">🇪🇸 ES</option>
+        <option value="de">🇩🇪 DE</option>
+      </select>
+    </div>
+  </header>
+
+  <section class="bg-gray-900 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-6" data-i18n="hero-title">
+        Alavanque a sua presença digital com a VALTRIX
+      </h2>
+      <p class="text-xl mb-8" data-i18n="hero-subtitle">
+        Agência especializada em marketing digital, tráfego pago e redes sociais.
+      </p>
+      <a href="mailto:valtrix.digital@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium text-lg" data-i18n="contact-button">
+        Fale Conosco
+      </a>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-4" data-i18n="about-title">Sobre a VALTRIX</h2>
+      <p class="text-lg text-gray-700" data-i18n="about-text">
+        A VALTRIX é uma agência moderna focada em gerar resultados reais para empresas através de estratégias eficazes de marketing digital e branding.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12" data-i18n="services-title">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2" data-i18n="service-1-title">Gestão de Redes Sociais</h3>
+          <p class="text-gray-600" data-i18n="service-1-text">Conteúdo, estratégia e engajamento para Instagram, Facebook, TikTok e mais.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2" data-i18n="service-2-title">Tráfego Pago</h3>
+          <p class="text-gray-600" data-i18n="service-2-text">Campanhas otimizadas no Facebook Ads, Instagram e Google Ads para conversão.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          <h3 class="text-xl font-semibold mb-2" data-i18n="service-3-title">Design & Branding</h3>
+          <p class="text-gray-600" data-i18n="service-3-text">Criação de identidade visual e posicionamento de marca profissional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-6" data-i18n="contact-title">Entre em contato</h2>
+      <p class="text-lg mb-4" data-i18n="contact-text">
+        Envie um email para: <a href="mailto:valtrix.digital@gmail.com" class="text-blue-600 font-semibold">valtrix.digital@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-4 text-center text-sm">
+    <p>&copy; 2025 VALTRIX. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    const translations = {
+      pt: {
+        "hero-title": "Alavanque a sua presença digital com a VALTRIX",
+        "hero-subtitle": "Agência especializada em marketing digital, tráfego pago e redes sociais.",
+        "contact-button": "Fale Conosco",
+        "about-title": "Sobre a VALTRIX",
+        "about-text": "A VALTRIX é uma agência moderna focada em gerar resultados reais para empresas através de estratégias eficazes de marketing digital e branding.",
+        "services-title": "Nossos Serviços",
+        "service-1-title": "Gestão de Redes Sociais",
+        "service-1-text": "Conteúdo, estratégia e engajamento para Instagram, Facebook, TikTok e mais.",
+        "service-2-title": "Tráfego Pago",
+        "service-2-text": "Campanhas otimizadas no Facebook Ads, Instagram e Google Ads para conversão.",
+        "service-3-title": "Design & Branding",
+        "service-3-text": "Criação de identidade visual e posicionamento de marca profissional.",
+        "contact-title": "Entre em contato",
+        "contact-text": "Envie um email para:"
+      },
+      en: {
+        "hero-title": "Boost your digital presence with VALTRIX",
+        "hero-subtitle": "Agency specialized in digital marketing, paid traffic and social media.",
+        "contact-button": "Contact Us",
+        "about-title": "About VALTRIX",
+        "about-text": "VALTRIX is a modern agency focused on real business results through smart marketing and branding strategies.",
+        "services-title": "Our Services",
+        "service-1-title": "Social Media Management",
+        "service-1-text": "Content, strategy and engagement for Instagram, Facebook, TikTok and more.",
+        "service-2-title": "Paid Traffic",
+        "service-2-text": "Optimized campaigns on Facebook Ads, Instagram and Google Ads.",
+        "service-3-title": "Design & Branding",
+        "service-3-text": "Visual identity and professional brand positioning.",
+        "contact-title": "Get in Touch",
+        "contact-text": "Send an email to:"
+      },
+      es: {
+        "hero-title": "Impulsa tu presencia digital con VALTRIX",
+        "hero-subtitle": "Agencia especializada en marketing digital, tráfico pago y redes sociales.",
+        "contact-button": "Contáctanos",
+        "about-title": "Sobre VALTRIX",
+        "about-text": "VALTRIX es una agencia moderna enfocada en generar resultados reales para empresas a través de estrategias efectivas de marketing y branding.",
+        "services-title": "Nuestros Servicios",
+        "service-1-title": "Gestión de Redes Sociales",
+        "service-1-text": "Contenido, estrategia y engagement para Instagram, Facebook, TikTok y más.",
+        "service-2-title": "Tráfico Pago",
+        "service-2-text": "Campañas optimizadas en Facebook Ads, Instagram y Google Ads.",
+        "service-3-title": "Diseño & Branding",
+        "service-3-text": "Identidad visual y posicionamiento profesional de marca.",
+        "contact-title": "Contáctanos",
+        "contact-text": "Envia un email a:"
+      },
+      de: {
+        "hero-title": "Stärken Sie Ihre Online-Präsenz mit VALTRIX",
+        "hero-subtitle": "Agentur für digitales Marketing, bezahlte Werbung und soziale Medien.",
+        "contact-button": "Kontaktieren Sie uns",
+        "about-title": "Über VALTRIX",
+        "about-text": "VALTRIX ist eine moderne Agentur, die sich auf echte Geschäftsergebnisse durch effektives Marketing und Branding konzentriert.",
+        "services-title": "Unsere Leistungen",
+        "service-1-title": "Social Media Management",
+        "service-1-text": "Inhalte, Strategie und Engagement für Instagram, Facebook, TikTok und mehr.",
+        "service-2-title": "Bezahlte Werbung",
+        "service-2-text": "Optimierte Kampagnen auf Facebook Ads, Instagram und Google Ads.",
+        "service-3-title": "Design & Branding",
+        "service-3-text": "Visuelle Identität und professionelle Markenpositionierung.",
+        "contact-title": "Kontaktieren Sie uns",
+        "contact-text": "Senden Sie eine E-Mail an:"
+      }
+    };
+
+    function changeLanguage(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        el.textContent = translations[lang][key] || key;
+      });
+    }
+  </script>
+</body>
+</html>
